@@ -1,0 +1,6 @@
+vehicle_id,name,pcu,length
+0,motorcycle,0.3,2.0
+1,cng,0.7,3.0
+2,private_car,1.0,4.5
+3,bus,2.5,10.0
+4,rickshaw_bicycle,0.5,2.5

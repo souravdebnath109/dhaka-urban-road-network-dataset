@@ -1,0 +1,16 @@
+road_type,vehicle_type,access
+arterial,0,1.0
+arterial,1,0.5
+arterial,2,1.0
+arterial,3,1.0
+arterial,4,0.0
+collector,0,1.0
+collector,1,1.0
+collector,2,1.0
+collector,3,0.5
+collector,4,0.5
+local,0,1.0
+local,1,0.5
+local,2,0.5
+local,3,0.0
+local,4,1.0

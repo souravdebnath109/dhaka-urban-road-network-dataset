@@ -374,8 +374,12 @@ Avoid replacing a previously cited dataset version without preserving the origin
 
 Researchers interested in using, evaluating, or extending this dataset are encouraged to consult the repository documentation and open a GitHub issue for questions about the released files.
 
-Repository:  
-https://github.com/souravdebnath109/dhaka-urban-road-network-dataset
+**Repository:** [dhaka-urban-road-network-dataset](https://github.com/souravdebnath109/dhaka-urban-road-network-dataset)
+
+### Contributors
+
+- **[Sourav Debnath](https://github.com/souravdebnath109)** — Dataset development, research, and repository maintenance.
+- **[Azrof88](https://github.com/Azrof88)** — Contribution to dataset development.
 
 Contributions that improve documentation, data validation, reproducibility, or transparent reporting of limitations are welcome, subject to the applicable data-source terms.
 
@@ -387,6 +391,10 @@ The dataset does not constitute an official government road inventory, a live tr
 
 ---
 
-**Maintainer:** Sourav Debnath  
-**Repository:** https://github.com/souravdebnath109/dhaka-urban-road-network-dataset  
+**Maintainer:** [Sourav Debnath](https://github.com/souravdebnath109)
+
+**Contributors:** [Sourav Debnath](https://github.com/souravdebnath109), [Azrof88](https://github.com/Azrof88)
+
+**Repository:** [dhaka-urban-road-network-dataset](https://github.com/souravdebnath109/dhaka-urban-road-network-dataset)
+
 **Research domain:** Urban transportation, road-network analysis, heterogeneous traffic routing, and transportation optimization.

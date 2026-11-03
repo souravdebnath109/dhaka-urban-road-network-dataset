@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhaka Urban Road Network - Interactive Map</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #f3f6fb;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #16365c;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+p {
+    color: #586a80;
+}
+
+.viewer {
+    max-width: 1250px;
+    margin: 25px auto;
+    background: white;
+    padding: 12px;
+    border-radius: 15px;
+    box-shadow: 0 5px 24px #0002;
+}
+
+.controls {
+    padding: 12px;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 4px;
+    background: #145aa0;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #083d77;
+}
+
+#mapContainer {
+    width: 100%;
+    aspect-ratio: 1448 / 1086;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    cursor: zoom-in;
+    background: white;
+}
+
+#mapImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transform-origin: top left;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.12s ease;
+}
+
+.info {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Dhaka Urban Road Network</h1>
+
+<p>
+Interactive Road Network Visualization
+</p>
+
+<div class="viewer">
+
+    <div class="controls">
+        <button onclick="zoomIn()">+ Zoom In</button>
+        <button onclick="zoomOut()">− Zoom Out</button>
+        <button onclick="resetZoom()">Reset</button>
+        <strong id="zoomLevel">100%</strong>
+    </div>
+
+    <div id="mapContainer">
+        <img
+            id="mapImage"
+            src="https://github.com/user-attachments/assets/4fea3d02-9c32-442f-b695-c0afd2ed4afa"
+            alt="Dhaka Urban Road Network">
+    </div>
+
+    <p class="info">
+        Hover over the image and scroll to zoom.
+        Move the mouse outside to reset.
+    </p>
+
+</div>
+
+<p>
+57,424 Nodes | 151,886 Directed Links
+</p>
+
+<p class="info">
+Illustrative map only. Landmark positions and
+scale bar have not been GIS-validated.
+</p>
+
+<script>
+const container = document.getElementById("mapContainer");
+const image = document.getElementById("mapImage");
+const zoomLabel = document.getElementById("zoomLevel");
+
+let scale = 1;
+let mouseX = 0.5;
+let mouseY = 0.5;
+
+function render() {
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    const translateX = (1 - scale) * width * mouseX;
+    const translateY = (1 - scale) * height * mouseY;
+
+    image.style.transform =
+        `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+
+    zoomLabel.textContent = Math.round(scale * 100) + "%";
+}
+
+function setZoom(value) {
+    scale = Math.max(1, Math.min(5, value));
+    render();
+}
+
+function updateMouse(event) {
+    const rect = container.getBoundingClientRect();
+
+    mouseX = Math.max(0, Math.min(1,
+        (event.clientX - rect.left) / rect.width));
+
+    mouseY = Math.max(0, Math.min(1,
+        (event.clientY - rect.top) / rect.height));
+}
+
+container.addEventListener("wheel", function(event) {
+    event.preventDefault();
+    updateMouse(event);
+
+    if (event.deltaY < 0) {
+        setZoom(scale * 1.2);
+    } else {
+        setZoom(scale / 1.2);
+    }
+}, { passive: false });
+
+container.addEventListener("mousemove", function(event) {
+    if (scale > 1) {
+        updateMouse(event);
+        render();
+    }
+});
+
+container.addEventListener("mouseleave", resetZoom);
+
+function zoomIn() {
+    setZoom(scale * 1.2);
+}
+
+function zoomOut() {
+    setZoom(scale / 1.2);
+}
+
+function resetZoom() {
+    scale = 1;
+    mouseX = 0.5;
+    mouseY = 0.5;
+    render();
+}
+
+window.addEventListener("resize", render);
+
+render();
+</script>
+
+</body>
+</html>

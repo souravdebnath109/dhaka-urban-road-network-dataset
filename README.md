@@ -125,9 +125,13 @@ These classes provide the road hierarchy used in the associated vehicle–road s
 
 The following overview illustrates the integrated Dhaka road network and its three functional road classes. Arterial roads are drawn in red with the thickest strokes, collector roads in blue with medium-width strokes, and local roads in green with the thinnest strokes. The illustration also displays a north arrow, example location labels, an illustrative scale bar, and the node and directed-link counts reported in the associated manuscript.
 
+
 <p align="center">
-  <img src="figures/dhaka_urban_road_network_map.png" alt="Illustrative overview of the Dhaka urban road network, with arterial, collector and local roads in different colors and widths" width="900" />
+  <img src="dhaka_urban_road_network_map.png"
+       alt="Dhaka Urban Road Network Map"
+       width="900">
 </p>
+
 
 <p align="center"><strong>Figure 1.</strong> Illustrative map of the Dhaka urban road network, highlighting arterial, collector, and local roads and reporting 57,424 nodes and 151,886 directed links.</p>
 

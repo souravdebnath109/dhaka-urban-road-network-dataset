@@ -148,18 +148,6 @@ The visualization includes major example locations, north direction, an illustra
   <strong>Figure 1.</strong> Illustrative Dhaka urban road network.
 </p>
 
-<p align="center">
-  <a href="https://souravdebnath109.github.io/dhaka-urban-road-network-dataset/">
-    <strong>🔍 Open Interactive Zoomable Map</strong>
-  </a>
-</p>
-
-<p align="center">
-  Hover over the map and use the mouse wheel to zoom in or out.
-  Moving the mouse outside the interactive map resets the zoom.
-</p>
-
-> **Figure accuracy note:** This is an illustrative map, not a GIS-verified visualization. Landmark positions, road geometry, and the scale bar have not been spatially validated against the released dataset.
 
 
 ## 5. Heterogeneous vehicle representation

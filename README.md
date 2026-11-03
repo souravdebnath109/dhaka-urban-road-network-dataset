@@ -123,19 +123,44 @@ These classes provide the road hierarchy used in the associated vehicle–road s
 
 ### 4.3 Road-network visualization
 
-The following overview illustrates the integrated Dhaka road network and its three functional road classes. Arterial roads are drawn in red with the thickest strokes, collector roads in blue with medium-width strokes, and local roads in green with the thinnest strokes. The illustration also displays a north arrow, example location labels, an illustrative scale bar, and the node and directed-link counts reported in the associated manuscript.
 
+### 4.3 Road-network visualization
+
+The following map illustrates the integrated Dhaka road network and its three functional road classes.
+
+- **Arterial roads:** Red — maximum width
+- **Collector roads:** Blue — medium width
+- **Local roads:** Green — minimum width
+
+The visualization includes major example locations, north direction, an illustrative scale bar, **57,424 nodes**, and **151,886 directed links**.
 
 <p align="center">
-  <img src="dhaka_urban_road_network_map.png"
-       alt="Dhaka Urban Road Network Map"
-       width="900">
+  <a href="https://souravdebnath109.github.io/dhaka-urban-road-network-dataset/">
+    <img
+      src="https://github.com/user-attachments/assets/4fea3d02-9c32-442f-b695-c0afd2ed4afa"
+      alt="Dhaka Urban Road Network"
+      width="900"
+    />
+  </a>
 </p>
 
+<p align="center">
+  <strong>Figure 1.</strong> Illustrative Dhaka urban road network.
+</p>
 
-<p align="center"><strong>Figure 1.</strong> Illustrative map of the Dhaka urban road network, highlighting arterial, collector, and local roads and reporting 57,424 nodes and 151,886 directed links.</p>
+<p align="center">
+  <a href="https://souravdebnath109.github.io/dhaka-urban-road-network-dataset/">
+    <strong>🔍 Open Interactive Zoomable Map</strong>
+  </a>
+</p>
 
-> **Figure accuracy note:** This image is a designed illustration rather than a GIS-verified map produced directly from the released node/link coordinates. Landmark labels, drawn geometry, and the scale bar should not be treated as spatially validated. For quantitative analysis or publication, regenerate the map from the actual dataset using a known coordinate reference system and a measured scale.
+<p align="center">
+  Hover over the map and use the mouse wheel to zoom in or out.
+  Moving the mouse outside the interactive map resets the zoom.
+</p>
+
+> **Figure accuracy note:** This is an illustrative map, not a GIS-verified visualization. Landmark positions, road geometry, and the scale bar have not been spatially validated against the released dataset.
+
 
 ## 5. Heterogeneous vehicle representation
 

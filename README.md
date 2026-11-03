@@ -121,6 +121,18 @@ The research representation uses three functional road classes:
 
 These classes provide the road hierarchy used in the associated vehicle–road suitability model. They should not automatically be interpreted as official administrative road classifications.
 
+### 4.3 Road-network visualization
+
+The following overview illustrates the integrated Dhaka road network and its three functional road classes. Arterial roads are drawn in red with the thickest strokes, collector roads in blue with medium-width strokes, and local roads in green with the thinnest strokes. The illustration also displays a north arrow, example location labels, an illustrative scale bar, and the node and directed-link counts reported in the associated manuscript.
+
+<p align="center">
+  <img src="figures/dhaka_urban_road_network_map.png" alt="Illustrative overview of the Dhaka urban road network, with arterial, collector and local roads in different colors and widths" width="900" />
+</p>
+
+<p align="center"><strong>Figure 1.</strong> Illustrative map of the Dhaka urban road network, highlighting arterial, collector, and local roads and reporting 57,424 nodes and 151,886 directed links.</p>
+
+> **Figure accuracy note:** This image is a designed illustration rather than a GIS-verified map produced directly from the released node/link coordinates. Landmark labels, drawn geometry, and the scale bar should not be treated as spatially validated. For quantitative analysis or publication, regenerate the map from the actual dataset using a known coordinate reference system and a measured scale.
+
 ## 5. Heterogeneous vehicle representation
 
 The associated research evaluates routing for five vehicle classes:

@@ -135,20 +135,24 @@ The following map illustrates the integrated Dhaka road network and its three fu
 
 The visualization includes major example locations, north direction, an illustrative scale bar, **57,424 nodes**, and **151,886 directed links**.
 
+
 <p align="center">
-  <a href="https://souravdebnath109.github.io/dhaka-urban-road-network-dataset/">
+  <a href="https://github.com/user-attachments/assets/0f1970af-a51e-425a-af7d-8711cbfa2c16">
     <img
-      src="https://github.com/user-attachments/assets/4fea3d02-9c32-442f-b695-c0afd2ed4afa"
-      alt="Dhaka Urban Road Network"
+      src="https://github.com/user-attachments/assets/0f1970af-a51e-425a-af7d-8711cbfa2c16"
+      alt="Dhaka Urban Road Network Map"
       width="900"
     />
   </a>
 </p>
 
 <p align="center">
-  <strong>Figure 1.</strong> Illustrative Dhaka urban road network.
+  <strong>Figure 1.</strong>
+  Dhaka urban road network showing arterial,
+  collector, and local roads, major locations,
+  and network statistics.
+  <em>Click the image to view it at full size.</em>
 </p>
-
 
 
 ## 5. Heterogeneous vehicle representation

@@ -2,7 +2,8 @@
 
 **A directed urban road-network dataset for transportation research in Dhaka, Bangladesh**
 
-[![Repository](https://img.shields.io/badge/Repository-GitHub-black?logo=github)](https://github.com/souravdebnath109/dhaka-urban-road-network-dataset)
+<img width="1448" height="1086" alt="v3 Dhaka_Urban_Road_Network_Map" src="https://github.com/user-attachments/assets/0f1970af-a51e-425a-af7d-8711cbfa2c16" />
+
 
 ## 1. Overview
 
